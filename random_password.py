@@ -17,48 +17,50 @@ capitals = string.ascii_uppercase
 specials = string.punctuation
 list_nums = string.digits
 
-if capital_chars == "y" or "yes" and special_chars == "n" or "no" and numbers == "n" or "no":
+if capital_chars == "y" and special_chars == "n" and numbers == "n":
     temp_var = characters + capitals
     new_choice = random.sample(temp_var, length_password)
     password = "".join(new_choice)
     print(password)
-elif capital_chars == "n" or "no" and special_chars == "y" or "yes" and numbers == "n" or "no":
+elif capital_chars == "n" and special_chars == "y" and numbers == "n":
     temp_var = characters + specials
     new_choice = random.sample(temp_var, length_password)
     password = "".join(new_choice)
     print(password)
-elif capital_chars == "n" or "no" and special_chars == "n" or "no" and numbers == "y" or "yes":
+elif capital_chars == "n" and special_chars == "n" and numbers == "y":
     temp_var = characters + list_nums
     new_choice = random.sample(temp_var, length_password)
     password = "".join(new_choice)
     print(password)
-elif capital_chars == "y" or "yes" and special_chars == "y" or "yes" and numbers == "n" or "no":
+elif capital_chars == "y" and special_chars == "y" and numbers == "n":
     temp_var = characters + capitals + specials
     new_choice = random.sample(temp_var, length_password)
     password = "".join(new_choice)
     print(password)
-elif capital_chars == "y" or "yes" and special_chars == "n" or "no" and numbers == "y" or "yes":
+elif capital_chars == "y" and special_chars == "n" and numbers == "y":
     temp_var = characters + capitals + list_nums
     new_choice = random.sample(temp_var, length_password)
     password = "".join(new_choice)
     print(password)
-elif capital_chars == "n" or "no" and special_chars == "y" or "yes" and numbers == "y" or "yes":
-    temp_var = characters + special_chars + list_nums
+elif capital_chars == "n" and special_chars == "y" and numbers == "y":
+    temp_var = characters + specials + list_nums
     new_choice = random.sample(temp_var, length_password)
     password = "".join(new_choice)
     print(password)
-elif capital_chars == "y" or "yes" and special_chars == "y" or "yes" and numbers == "y" or "yes":
-    temp_var = characters + capitals + special_chars + list_nums
+elif capital_chars == "y" and special_chars == "y" and numbers == "y":
+    temp_var = characters + capitals + specials + list_nums
     new_choice = random.sample(temp_var, length_password)
     password = "".join(new_choice)
     print(password)
-elif capital_chars == "n" or "no" and special_chars == "n" or "no" and numbers == "n" or "no":
+elif capital_chars == "n" and special_chars == "n" and numbers == "n":
     new_choice = random.sample(characters, length_password)
     password = "".join(new_choice)
     print(password)
 else:
-    print("Sorry you did not type y/yes/n/no correctly, automatically printing a strong password: ")
-    temp_var = characters + capitals + special_chars + list_nums
+    print("Sorry you did not type y or n for one or more questions, automatically printing a strong password: ")
+    temp_var = characters + capitals + specials + list_nums
     new_choice = random.sample(temp_var, length_password)
     password = "".join(new_choice)
     print(password)
+
+# from tkinter import *  ----- will add this later (maybe probably)
