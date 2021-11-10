@@ -7,6 +7,7 @@ import random
 import string
 import requests
 
+
 get_url = requests.get(" https://malliuxservice.herokuapp.com/username")
 display_name = get_url.text
 
