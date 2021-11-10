@@ -8,6 +8,7 @@ import string
 import requests
 from flask import Flask
 from tkinter import *
+from tkinter.ttk import *
 
 app = Flask(__name__)
 
@@ -16,6 +17,7 @@ app = Flask(__name__)
 def index():
     get_url = requests.get("https://malliuxservice.herokuapp.com/username")
     return get_url.text
+
 
 master = Tk()
 master.title('Random Password Generator!')
