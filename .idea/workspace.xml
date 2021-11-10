@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6a58f31-595b-44b4-9b8a-fe9561c35b25" name="Default Changelist" comment="Fixing get - previously tested to see if it would deploy correctly">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_password.py" beforeDir="false" afterPath="$PROJECT_DIR$/random_password.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-    </list>
+    <list default="true" id="a6a58f31-595b-44b4-9b8a-fe9561c35b25" name="Default Changelist" comment="Added checkboxes and got rid of input statements (basically brute forced a lot of it)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +44,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CS 161/project-5b-shkedya/Taxicab.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/requirements.txt" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
@@ -144,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636527114781</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added checkboxes and got rid of input statements (basically brute forced a lot of it)">
+      <created>1636544033807</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1636544033807</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -169,17 +172,18 @@
     <MESSAGE value="adding requirements.txt" />
     <MESSAGE value="adding app" />
     <MESSAGE value="Fixing get - previously tested to see if it would deploy correctly" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing get - previously tested to see if it would deploy correctly" />
+    <MESSAGE value="Added checkboxes and got rid of input statements (basically brute forced a lot of it)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added checkboxes and got rid of input statements (basically brute forced a lot of it)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="544" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1636521281204">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="544" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1636521281204" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1636538327758">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1636544048672">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1636538327758" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1636544048672" />
     <state x="605" y="310" key="Github.ShareDialog" timestamp="1636441495636">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -188,38 +192,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="544" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1636441525741" />
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1636543983559">
+    <state width="1515" height="261" key="GridCell.Tab.0.bottom" timestamp="1636544179758">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1636543983559" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1636543983559">
+    <state width="1515" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1636544179758" />
+    <state width="1515" height="261" key="GridCell.Tab.0.center" timestamp="1636544179758">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1636543983559" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1636543983559">
+    <state width="1515" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1636544179758" />
+    <state width="1515" height="261" key="GridCell.Tab.0.left" timestamp="1636544179758">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1636543983559" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1636543983559">
+    <state width="1515" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1636544179758" />
+    <state width="1515" height="261" key="GridCell.Tab.0.right" timestamp="1636544179758">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1636543983559" />
-    <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1636537366068">
+    <state width="1515" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1636544179758" />
+    <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1636544179758">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1636537366068" />
-    <state width="1515" height="261" key="GridCell.Tab.1.center" timestamp="1636537366068">
+    <state width="1515" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1636544179758" />
+    <state width="1515" height="261" key="GridCell.Tab.1.center" timestamp="1636544179758">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1636537366068" />
-    <state width="1515" height="261" key="GridCell.Tab.1.left" timestamp="1636537366068">
+    <state width="1515" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1636544179758" />
+    <state width="1515" height="261" key="GridCell.Tab.1.left" timestamp="1636544179758">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1636537366068" />
-    <state width="1515" height="261" key="GridCell.Tab.1.right" timestamp="1636537366068">
+    <state width="1515" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1636544179758" />
+    <state width="1515" height="261" key="GridCell.Tab.1.right" timestamp="1636544179758">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1636537366068" />
+    <state width="1515" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1636544179758" />
     <state x="407" y="174" key="MultipleFileMergeDialog" timestamp="1636526741872">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -228,14 +232,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1636526494729" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1636527116747">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1636544090735">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1636527116747" />
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1636526909395">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1636544090735" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1636544084935">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1636526909395" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1636544084935" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
