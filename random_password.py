@@ -17,7 +17,7 @@ def index():
     return "Hello this is the new version!"
 
 
-get_url = requests.get(" https://malliuxservice.herokuapp.com/username")
+get_url = requests.get("https://malliuxservice.herokuapp.com/username")
 display_name = get_url.text
 
 master = Tk()
@@ -174,28 +174,26 @@ Checkbutton(master, text="Numbers", variable=var3).grid(row=5, sticky=W)
 Button(master, text='Generate Password', command=master.quit).grid(row=6, sticky=W, pady=4)
 mainloop()
 
-length_password = 3
+length_password = 1
 
-"""
-if button1.get('bg') == '#20b2aa':
+if button1['bg'] == '#20b2aa':
     length_password = 1
-if button1['text'] == 1:
+if button2['bg'] == '#20b2aa':
     length_password = 2
-if button3['state'] == '#20b2aa':
+if button3['bg'] == '#20b2aa':
     length_password = 3
-if button4['state'] == '#20b2aa':
+if button4['bg'] == '#20b2aa':
     length_password = 4
-if button5['state'] == '#20b2aa':
+if button5['bg'] == '#20b2aa':
     length_password = 5
-if button6['state'] == '#20b2aa':
+if button6['bg'] == '#20b2aa':
     length_password = 6
-if button7['state'] == '#20b2aa':
+if button7['bg'] == '#20b2aa':
     length_password = 7
-if button8['state'] == '#20b2aa':
+if button8['bg'] == '#20b2aa':
     length_password = 8
-if button9['state'] == '#20b2aa':
+if button9['bg'] == '#20b2aa':
     length_password = 9
-"""
 
 characters = string.ascii_lowercase
 capitals = string.ascii_uppercase
