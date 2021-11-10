@@ -8,7 +8,6 @@ import string
 import requests
 from flask import Flask
 from tkinter import *
-from tkinter.ttk import *
 
 app = Flask(__name__)
 
