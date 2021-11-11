@@ -3,10 +3,11 @@
 # Description: A get request is initiated to get a username, that user is given a random password based on
 #              criteria that they choose
 
-# import requests
+import requests
 import string
 import random
 from flask import Flask
+from waitress import serve
 from tkinter import *
 
 app = Flask(__name__)
@@ -215,11 +216,12 @@ def password():
 @app.route('/')
 def index():
     new_password = "".join(password())
-    return new_password
+    get_url = requests.get("https://malliuxservice.herokuapp.com/username")
+    display_name = get_url.text
+    return "hi"+display_name+new_password+" is your password."
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    serve(app, host="127.0.0.1", port=8080)
+    app.run(debug=False)
 
-# get_url = requests.get("https://malliuxservice.herokuapp.com/username")
-# display_name = get_url.text
