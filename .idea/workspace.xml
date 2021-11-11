@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6a58f31-595b-44b4-9b8a-fe9561c35b25" name="Default Changelist" comment="Added new flask data">
+    <list default="true" id="a6a58f31-595b-44b4-9b8a-fe9561c35b25" name="Default Changelist" comment="idk new change">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
@@ -47,7 +47,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pythonProject/practice.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager" selected="Python.app">
@@ -382,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636604789094</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="idk new change">
+      <created>1636606843463</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1636606843463</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -418,17 +425,18 @@
     <MESSAGE value="Updated index" />
     <MESSAGE value="Updated requirements.txt" />
     <MESSAGE value="Added new flask data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new flask data" />
+    <MESSAGE value="idk new change" />
+    <option name="LAST_COMMIT_MESSAGE" value="idk new change" />
   </component>
   <component name="WindowStateProjectService">
     <state x="544" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1636521281204">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="544" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1636521281204" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1636587340409">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1636607320317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1636587340409" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1636607320317" />
     <state x="605" y="310" key="Github.ShareDialog" timestamp="1636441495636">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -477,10 +485,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1636526494729" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1636604790336">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1636606846350">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1636604790336" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1636606846350" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1636544084935">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
