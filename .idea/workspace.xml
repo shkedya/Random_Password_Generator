@@ -19,12 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6a58f31-595b-44b4-9b8a-fe9561c35b25" name="Default Changelist" comment="changed procfile">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reqiurements.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="a6a58f31-595b-44b4-9b8a-fe9561c35b25" name="Default Changelist" comment="got rid of the quotes on the name" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -132,20 +127,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636435484664</updated>
-    </task>
-    <task id="LOCAL-00004" summary="adding requirements.txt">
-      <created>1636508550353</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1636508550353</updated>
-    </task>
-    <task id="LOCAL-00005" summary="adding app">
-      <created>1636509704267</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1636509704267</updated>
     </task>
     <task id="LOCAL-00006" summary="adding app">
       <created>1636526712695</created>
@@ -476,7 +457,21 @@
       <option name="project" value="LOCAL" />
       <updated>1636618019236</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="changed procfile">
+      <created>1636620845625</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1636620845625</updated>
+    </task>
+    <task id="LOCAL-00054" summary="got rid of the quotes on the name">
+      <created>1636620932381</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1636620932381</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -516,17 +511,18 @@
     <MESSAGE value="separated files" />
     <MESSAGE value="updated code" />
     <MESSAGE value="changed procfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed procfile" />
+    <MESSAGE value="got rid of the quotes on the name" />
+    <option name="LAST_COMMIT_MESSAGE" value="got rid of the quotes on the name" />
   </component>
   <component name="WindowStateProjectService">
     <state x="544" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1636521281204">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="544" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1636521281204" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1636618820715">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1636620892846">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1636618820715" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1636620892846" />
     <state x="605" y="310" key="Github.ShareDialog" timestamp="1636441495636">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -535,22 +531,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="544" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1636441525741" />
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1636620662874">
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1636621071878">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1636620662874" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1636620662874">
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1636621071878" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1636621071877">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1636620662874" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1636620662874">
+    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1636621071877" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1636621071877">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1636620662874" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1636620662874">
+    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1636621071877" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1636621071878">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1636620662874" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1636621071878" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1636544179758">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -575,10 +571,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1636611471940" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1636618020844">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1636620933685">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1636618020844" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1636620933685" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1636544084935">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
