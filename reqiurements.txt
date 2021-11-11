@@ -11,6 +11,5 @@ MarkupSafe==2.0.1
 requests==2.26.0
 tk==0.1.0
 urllib3==1.26.7
-waitress==2.0.0
 Werkzeug==2.0.2
 yarg==0.1.9
