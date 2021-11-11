@@ -7,7 +7,6 @@
 import string
 import random
 from flask import Flask
-from flask import jsonify
 from button_code import *
 
 app = Flask(__name__)
@@ -55,7 +54,7 @@ def password():
 @app.route('/')
 def index():
     new_password = "".join(password())
-    return jsonify(new_password)
+    return new_password
 
 
 if __name__ == '__main__':
