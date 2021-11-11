@@ -239,3 +239,5 @@ characters = string.ascii_lowercase
 capitals = string.ascii_uppercase
 specials = string.punctuation
 list_nums = string.digits
+
+index()
