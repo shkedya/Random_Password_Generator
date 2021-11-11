@@ -1,6 +1,6 @@
 import string
-import random
 from tkinter import *
+
 
 master = Tk()
 master.title('Random Password Generator!')
@@ -155,49 +155,52 @@ Checkbutton(master, text="Numbers", variable=var3).grid(row=5, sticky=W)
 Button(master, text='Generate Password', command=master.quit).grid(row=6, sticky=W, pady=4)
 mainloop()
 
-length_password = 1
-if button1['bg'] == '#20b2aa':
+
+def length_your_password():
     length_password = 1
-if button2['bg'] == '#20b2aa':
-    length_password = 2
-if button3['bg'] == '#20b2aa':
-    length_password = 3
-if button4['bg'] == '#20b2aa':
-    length_password = 4
-if button5['bg'] == '#20b2aa':
-    length_password = 5
-if button6['bg'] == '#20b2aa':
-    length_password = 6
-if button7['bg'] == '#20b2aa':
-    length_password = 7
-if button8['bg'] == '#20b2aa':
-    length_password = 8
-if button9['bg'] == '#20b2aa':
-    length_password = 9
+    if button1['bg'] == '#20b2aa':
+        length_password = 1
+    if button2['bg'] == '#20b2aa':
+        length_password = 2
+    if button3['bg'] == '#20b2aa':
+        length_password = 3
+    if button4['bg'] == '#20b2aa':
+        length_password = 4
+    if button5['bg'] == '#20b2aa':
+        length_password = 5
+    if button6['bg'] == '#20b2aa':
+        length_password = 6
+    if button7['bg'] == '#20b2aa':
+        length_password = 7
+    if button8['bg'] == '#20b2aa':
+        length_password = 8
+    if button9['bg'] == '#20b2aa':
+        length_password = 9
+    return length_password
+
 
 characters = string.ascii_lowercase
 capitals = string.ascii_uppercase
 specials = string.punctuation
 list_nums = string.digits
 
-if var1.get() == 1 and var2.get() == 0 and var3.get() == 0:
-    temp_var = characters + capitals
-elif var1.get() == 0 and var2.get() == 1 and var3.get() == 0:
-    temp_var = characters + specials
-elif var1.get() == 0 and var2.get() == 0 and var3.get() == 1:
-    temp_var = characters + list_nums
-elif var1.get() == 1 and var2.get() == 1 and var3.get() == 0:
-    temp_var = characters + capitals + specials
-elif var1.get() == 1 and var2.get() == 0 and var3.get() == 1:
-    temp_var = characters + capitals + list_nums
-elif var1.get() == 0 and var2.get() == 1 and var3.get() == 1:
-    temp_var = characters + specials + list_nums
-elif var1.get() == 1 and var2.get() == 1 and var3.get() == 1:
-    temp_var = characters + capitals + specials + list_nums
-elif var1.get() == 0 and var2.get() == 0 and var3.get() == 0:
+
+def generate_temp_var():
     temp_var = characters
-
-
-def password():
-    new_choice = random.sample(temp_var, length_password)
-    return new_choice
+    if var1.get() == 1 and var2.get() == 0 and var3.get() == 0:
+        temp_var = characters + capitals
+    elif var1.get() == 0 and var2.get() == 1 and var3.get() == 0:
+        temp_var = characters + specials
+    elif var1.get() == 0 and var2.get() == 0 and var3.get() == 1:
+        temp_var = characters + list_nums
+    elif var1.get() == 1 and var2.get() == 1 and var3.get() == 0:
+        temp_var = characters + capitals + specials
+    elif var1.get() == 1 and var2.get() == 0 and var3.get() == 1:
+        temp_var = characters + capitals + list_nums
+    elif var1.get() == 0 and var2.get() == 1 and var3.get() == 1:
+        temp_var = characters + specials + list_nums
+    elif var1.get() == 1 and var2.get() == 1 and var3.get() == 1:
+        temp_var = characters + capitals + specials + list_nums
+    elif var1.get() == 0 and var2.get() == 0 and var3.get() == 0:
+        temp_var = characters
+    return temp_var
