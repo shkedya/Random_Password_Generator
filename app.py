@@ -7,7 +7,6 @@ import random
 import string
 import requests
 from flask import Flask
-# from flask import request
 from tkinter import *
 
 app = Flask(__name__)
@@ -240,4 +239,4 @@ capitals = string.ascii_uppercase
 specials = string.punctuation
 list_nums = string.digits
 
-index()
+print(index())
