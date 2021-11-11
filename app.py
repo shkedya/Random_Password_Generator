@@ -3,6 +3,7 @@
 # Description: A get request is initiated to get a username, that user is given a random password based on
 #              criteria that they choose
 
+import random
 import requests
 from flask import Flask
 from flask import jsonify
