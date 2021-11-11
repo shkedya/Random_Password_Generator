@@ -7,6 +7,7 @@ import random
 import string
 import requests
 from flask import Flask
+from flask import request
 from tkinter import *
 
 app = Flask(__name__)
@@ -14,8 +15,12 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    get_url = requests.get("https://malliuxservice.herokuapp.com/username")
-    return get_url.text
+    get_password = request.args.get('password')
+    return get_password
+
+
+get_url = requests.get("https://malliuxservice.herokuapp.com/username")
+display_name = get_url.text
 
 
 master = Tk()
@@ -202,38 +207,46 @@ if var1.get() == 1 and var2.get() == 0 and var3.get() == 0:
     temp_var = characters + capitals
     new_choice = random.sample(temp_var, length_password)
     password = "".join(new_choice)
-    print("Hi", index(), "your password is", password)
+    index.get_password = password
+    print("Hi", display_name, "your password is", index.get_password)
 elif var1.get() == 0 and var2.get() == 1 and var3.get() == 0:
     temp_var = characters + specials
     new_choice = random.sample(temp_var, length_password)
     password = "".join(new_choice)
-    print("Hi", index(), "your password is", password)
+    index.get_password = password
+    print("Hi", display_name, "your password is", index.get_password)
 elif var1.get() == 0 and var2.get() == 0 and var3.get() == 1:
     temp_var = characters + list_nums
     new_choice = random.sample(temp_var, length_password)
     password = "".join(new_choice)
-    print("Hi", index(), "your password is", password)
+    index.get_password = password
+    print("Hi", display_name, "your password is", index.get_password)
 elif var1.get() == 1 and var2.get() == 1 and var3.get() == 0:
     temp_var = characters + capitals + specials
     new_choice = random.sample(temp_var, length_password)
     password = "".join(new_choice)
-    print("Hi", index(), "your password is", password)
+    index.get_password = password
+    print("Hi", display_name, "your password is", index.get_password)
 elif var1.get() == 1 and var2.get() == 0 and var3.get() == 1:
     temp_var = characters + capitals + list_nums
     new_choice = random.sample(temp_var, length_password)
     password = "".join(new_choice)
-    print("Hi", index(), "your password is", password)
+    index.get_password = password
+    print("Hi", display_name, "your password is", index.get_password)
 elif var1.get() == 0 and var2.get() == 1 and var3.get() == 1:
     temp_var = characters + specials + list_nums
     new_choice = random.sample(temp_var, length_password)
     password = "".join(new_choice)
-    print("Hi", index(), "your password is", password)
+    index.get_password = password
+    print("Hi", display_name, "your password is", index.get_password)
 elif var1.get() == 1 and var2.get() == 1 and var3.get() == 1:
     temp_var = characters + capitals + specials + list_nums
     new_choice = random.sample(temp_var, length_password)
     password = "".join(new_choice)
-    print("Hi", index(), "your password is", password)
+    index.get_password = password
+    print("Hi", display_name, "your password is", index.get_password)
 elif var1.get() == 0 and var2.get() == 0 and var3.get() == 0:
     new_choice = random.sample(characters, length_password)
     password = "".join(new_choice)
-    print("Hi", index(), "your password is", password)
+    index.get_password = password
+    print("Hi", display_name, "your password is", index.get_password)

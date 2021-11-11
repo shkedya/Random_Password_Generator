@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6a58f31-595b-44b4-9b8a-fe9561c35b25" name="Default Changelist" comment="Reverting Some Changes">
+    <list default="true" id="a6a58f31-595b-44b4-9b8a-fe9561c35b25" name="Default Changelist" comment="Got rid of the last else">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
@@ -50,7 +50,28 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.app">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Random Password Project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="random_password" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -74,6 +95,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.app" />
         <item itemvalue="Python.random_password" />
       </list>
     </recent_temporary>
@@ -248,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636590191194</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Got rid of the last else">
+      <created>1636591702906</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1636591702906</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -279,7 +308,8 @@
     <MESSAGE value="added an import tkinter.ttk - I don't know if I need this" />
     <MESSAGE value="had to change my procfile" />
     <MESSAGE value="Reverting Some Changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reverting Some Changes" />
+    <MESSAGE value="Got rid of the last else" />
+    <option name="LAST_COMMIT_MESSAGE" value="Got rid of the last else" />
   </component>
   <component name="WindowStateProjectService">
     <state x="544" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1636521281204">
@@ -298,22 +328,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="544" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1636441525741" />
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1636584712240">
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1636593657107">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1636584712240" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1636584712240">
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1636593657107" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1636593657107">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1636584712240" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1636584712240">
+    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1636593657107" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1636593657107">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1636584712240" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1636584712240">
+    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1636593657107" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1636593657107">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1636584712240" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1636593657107" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1636544179758">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -330,18 +360,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1636544179758" />
-    <state x="407" y="174" key="MultipleFileMergeDialog" timestamp="1636526741872">
+    <state x="407" y="174" key="MultipleFileMergeDialog" timestamp="1636591724832">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="407" y="174" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1636526741872" />
+    <state x="407" y="174" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1636591724832" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1636526494729">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1636526494729" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1636590192896">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1636591733131">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1636590192896" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1636591733131" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1636544084935">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
