@@ -8,6 +8,7 @@ import string
 import random
 from flask import Flask
 from tkinter import *
+import os
 
 app = Flask(__name__)
 
@@ -212,9 +213,15 @@ def password():
     return new_choice
 
 
+def decode_to_string(bytes):
+    return bytes.decode("utf-8")
+
+
 @app.route('/')
 def index():
+    os.environ.get('PORT', 8080)
     new_password = "".join(password())
     get_url = requests.get("https://malliuxservice.herokuapp.com/username")
-    display_name = get_url.text
-    return "hi"+display_name+new_password+" is your password."
+    data = decode_to_string(get_url.content)
+    display_name = data.strip('\n \t\r\'"')
+    return "hi "+display_name + "! "+new_password+" is your password."
