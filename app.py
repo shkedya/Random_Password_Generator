@@ -11,8 +11,19 @@ from flask import jsonify
 from tkinter import *
 
 app = Flask(__name__)
+
+@app.route('/')
+def index():
+    result = password()
+    return jsonify(result)
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
 get_url = requests.get("https://malliuxservice.herokuapp.com/username")
 display_name = get_url.text
+
 master = Tk()
 master.title('Random Password Generator!')
 Label(master, text="Select the checkboxes for what you want your password to contain\n Regular letters are "
@@ -167,7 +178,6 @@ Button(master, text='Generate Password', command=master.quit).grid(row=6, sticky
 mainloop()
 
 length_password = 1
-
 if button1['bg'] == '#20b2aa':
     length_password = 1
 if button2['bg'] == '#20b2aa':
@@ -233,13 +243,3 @@ def password():
         new_choice = random.sample(characters, length_password)
         new_password = "".join(new_choice)
         return new_password
-
-
-@app.route('/')
-def index():
-    result = password()
-    return jsonify(result)
-
-
-if __name__ == '__main__':
-    app.run(debug=True)
