@@ -19,8 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6a58f31-595b-44b4-9b8a-fe9561c35b25" name="Default Changelist" comment="Updated requirements.txt">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a6a58f31-595b-44b4-9b8a-fe9561c35b25" name="Default Changelist" comment="Added new flask data">
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -347,7 +346,28 @@
       <option name="project" value="LOCAL" />
       <updated>1636599318041</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Added new flask data">
+      <created>1636604028623</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1636604028623</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Added new flask data">
+      <created>1636604155197</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1636604155197</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Added new flask data">
+      <created>1636604203282</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1636604203282</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -382,7 +402,8 @@
     <MESSAGE value="Updated gets'" />
     <MESSAGE value="Updated index" />
     <MESSAGE value="Updated requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated requirements.txt" />
+    <MESSAGE value="Added new flask data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new flask data" />
   </component>
   <component name="WindowStateProjectService">
     <state x="544" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1636521281204">
@@ -441,10 +462,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1636526494729" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1636599319874">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1636604204520">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1636599319874" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1636604204520" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1636544084935">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
