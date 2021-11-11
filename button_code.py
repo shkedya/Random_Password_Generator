@@ -1,4 +1,3 @@
-import string
 from tkinter import *
 
 master = Tk()
@@ -173,8 +172,3 @@ if button8['bg'] == '#20b2aa':
     length_password = 8
 if button9['bg'] == '#20b2aa':
     length_password = 9
-
-characters = string.ascii_lowercase
-capitals = string.ascii_uppercase
-specials = string.punctuation
-list_nums = string.digits
