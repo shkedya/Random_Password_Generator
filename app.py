@@ -7,52 +7,10 @@ import random
 import string
 import requests
 from flask import Flask
+from flask import jsonify
 from tkinter import *
 
 app = Flask(__name__)
-
-
-@app.route("/")
-def index():
-    if var1.get() == 1 and var2.get() == 0 and var3.get() == 0:
-        temp_var = characters + capitals
-        new_choice = random.sample(temp_var, length_password)
-        new_password = "".join(new_choice)
-        return new_password
-    elif var1.get() == 0 and var2.get() == 1 and var3.get() == 0:
-        temp_var = characters + specials
-        new_choice = random.sample(temp_var, length_password)
-        new_password = "".join(new_choice)
-        return new_password
-    elif var1.get() == 0 and var2.get() == 0 and var3.get() == 1:
-        temp_var = characters + list_nums
-        new_choice = random.sample(temp_var, length_password)
-        new_password = "".join(new_choice)
-        return new_password
-    elif var1.get() == 1 and var2.get() == 1 and var3.get() == 0:
-        temp_var = characters + capitals + specials
-        new_choice = random.sample(temp_var, length_password)
-        new_password = "".join(new_choice)
-        return new_password
-    elif var1.get() == 1 and var2.get() == 0 and var3.get() == 1:
-        temp_var = characters + capitals + list_nums
-        new_choice = random.sample(temp_var, length_password)
-        new_password = "".join(new_choice)
-        return new_password
-    elif var1.get() == 0 and var2.get() == 1 and var3.get() == 1:
-        temp_var = characters + specials + list_nums
-        new_choice = random.sample(temp_var, length_password)
-        new_password = "".join(new_choice)
-        return new_password
-    elif var1.get() == 1 and var2.get() == 1 and var3.get() == 1:
-        temp_var = characters + capitals + specials + list_nums
-        new_choice = random.sample(temp_var, length_password)
-        new_password = "".join(new_choice)
-        return new_password
-    elif var1.get() == 0 and var2.get() == 0 and var3.get() == 0:
-        new_choice = random.sample(characters, length_password)
-        new_password = "".join(new_choice)
-        return new_password
 
 
 get_url = requests.get("https://malliuxservice.herokuapp.com/username")
@@ -239,4 +197,59 @@ capitals = string.ascii_uppercase
 specials = string.punctuation
 list_nums = string.digits
 
-print(index())
+
+def password():
+    if var1.get() == 1 and var2.get() == 0 and var3.get() == 0:
+        temp_var = characters + capitals
+        new_choice = random.sample(temp_var, length_password)
+        new_password = "".join(new_choice)
+        return "hi", display_name, "your password is", new_password
+    elif var1.get() == 0 and var2.get() == 1 and var3.get() == 0:
+        temp_var = characters + specials
+        new_choice = random.sample(temp_var, length_password)
+        new_password = "".join(new_choice)
+        return "hi", display_name, "your password is", new_password
+    elif var1.get() == 0 and var2.get() == 0 and var3.get() == 1:
+        temp_var = characters + list_nums
+        new_choice = random.sample(temp_var, length_password)
+        new_password = "".join(new_choice)
+        return "hi", display_name, "your password is", new_password
+    elif var1.get() == 1 and var2.get() == 1 and var3.get() == 0:
+        temp_var = characters + capitals + specials
+        new_choice = random.sample(temp_var, length_password)
+        new_password = "".join(new_choice)
+        return "hi", display_name, "your password is", new_password
+    elif var1.get() == 1 and var2.get() == 0 and var3.get() == 1:
+        temp_var = characters + capitals + list_nums
+        new_choice = random.sample(temp_var, length_password)
+        new_password = "".join(new_choice)
+        return "hi", display_name, "your password is", new_password
+    elif var1.get() == 0 and var2.get() == 1 and var3.get() == 1:
+        temp_var = characters + specials + list_nums
+        new_choice = random.sample(temp_var, length_password)
+        new_password = "".join(new_choice)
+        return "hi", display_name, "your password is", new_password
+    elif var1.get() == 1 and var2.get() == 1 and var3.get() == 1:
+        temp_var = characters + capitals + specials + list_nums
+        new_choice = random.sample(temp_var, length_password)
+        new_password = "".join(new_choice)
+        return "hi", display_name, "your password is", new_password
+    elif var1.get() == 0 and var2.get() == 0 and var3.get() == 0:
+        new_choice = random.sample(characters, length_password)
+        new_password = "".join(new_choice)
+        return "hi", display_name, "your password is", new_password
+
+
+@app.route('/')
+def hello():
+    return 'This is the testing page.'
+
+
+@app.route('/password')
+def password_route():
+    result = password()
+    return jsonify(result)
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
