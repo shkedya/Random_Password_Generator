@@ -7,7 +7,6 @@ import requests
 import string
 import random
 from flask import Flask
-from waitress import serve
 from tkinter import *
 
 app = Flask(__name__)
@@ -191,9 +190,9 @@ specials = string.punctuation
 list_nums = string.digits
 
 if var1.get() == 1 and var2.get() == 0 and var3.get() == 0:
-    temp1_var = characters + capitals
+    temp_var = characters + capitals
 elif var1.get() == 0 and var2.get() == 1 and var3.get() == 0:
-    temp2_var = characters + specials
+    temp_var = characters + specials
 elif var1.get() == 0 and var2.get() == 0 and var3.get() == 1:
     temp_var = characters + list_nums
 elif var1.get() == 1 and var2.get() == 1 and var3.get() == 0:
@@ -209,7 +208,7 @@ elif var1.get() == 0 and var2.get() == 0 and var3.get() == 0:
 
 
 def password():
-    new_choice = random.sample(temp1_var, length_password)
+    new_choice = random.sample(temp_var, length_password)
     return new_choice
 
 
@@ -219,9 +218,3 @@ def index():
     get_url = requests.get("https://malliuxservice.herokuapp.com/username")
     display_name = get_url.text
     return "hi"+display_name+new_password+" is your password."
-
-
-if __name__ == '__main__':
-    serve(app, host="127.0.0.1", port=8080)
-    app.run(debug=False)
-
