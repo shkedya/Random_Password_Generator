@@ -156,51 +156,54 @@ Button(master, text='Generate Password', command=master.quit).grid(row=6, sticky
 mainloop()
 
 
-def length_your_password():
-    length_password = 1
-    if button1['bg'] == '#20b2aa':
-        length_password = 1
-    if button2['bg'] == '#20b2aa':
-        length_password = 2
-    if button3['bg'] == '#20b2aa':
-        length_password = 3
-    if button4['bg'] == '#20b2aa':
-        length_password = 4
-    if button5['bg'] == '#20b2aa':
-        length_password = 5
-    if button6['bg'] == '#20b2aa':
-        length_password = 6
-    if button7['bg'] == '#20b2aa':
-        length_password = 7
-    if button8['bg'] == '#20b2aa':
-        length_password = 8
-    if button9['bg'] == '#20b2aa':
-        length_password = 9
-    return length_password
+class Data:
+    """
+    Represents the buttons' data
+    """
+    def __init__(self):
+        self.characters = string.ascii_lowercase
+        self.capitals = string.ascii_uppercase
+        self.specials = string.punctuation
+        self.list_nums = string.digits
+        self.length_password = 1
+        self.temp_var = string.ascii_lowercase
 
-
-characters = string.ascii_lowercase
-capitals = string.ascii_uppercase
-specials = string.punctuation
-list_nums = string.digits
-
-
-def generate_temp_var():
-    temp_var = characters
-    if var1.get() == 1 and var2.get() == 0 and var3.get() == 0:
-        temp_var = characters + capitals
-    elif var1.get() == 0 and var2.get() == 1 and var3.get() == 0:
-        temp_var = characters + specials
-    elif var1.get() == 0 and var2.get() == 0 and var3.get() == 1:
-        temp_var = characters + list_nums
-    elif var1.get() == 1 and var2.get() == 1 and var3.get() == 0:
-        temp_var = characters + capitals + specials
-    elif var1.get() == 1 and var2.get() == 0 and var3.get() == 1:
-        temp_var = characters + capitals + list_nums
-    elif var1.get() == 0 and var2.get() == 1 and var3.get() == 1:
-        temp_var = characters + specials + list_nums
-    elif var1.get() == 1 and var2.get() == 1 and var3.get() == 1:
-        temp_var = characters + capitals + specials + list_nums
-    elif var1.get() == 0 and var2.get() == 0 and var3.get() == 0:
-        temp_var = characters
-    return temp_var
+    def password_length(self):
+        if button1['bg'] == '#20b2aa':
+            self.length_password = 1
+        if button2['bg'] == '#20b2aa':
+            self.length_password = 2
+        if button3['bg'] == '#20b2aa':
+            self.length_password = 3
+        if button4['bg'] == '#20b2aa':
+            self.length_password = 4
+        if button5['bg'] == '#20b2aa':
+            self.length_password = 5
+        if button6['bg'] == '#20b2aa':
+            self.length_password = 6
+        if button7['bg'] == '#20b2aa':
+            self.length_password = 7
+        if button8['bg'] == '#20b2aa':
+            self.length_password = 8
+        if button9['bg'] == '#20b2aa':
+            self.length_password = 9
+        return self.length_password
+    
+    def get_temp_var(self):
+        if var1.get() == 1 and var2.get() == 0 and var3.get() == 0:
+            self.temp_var = self.characters + self.capitals
+        if var1.get() == 0 and var2.get() == 1 and var3.get() == 0:
+            self.temp_var = self.characters + self.specials
+        if var1.get() == 0 and var2.get() == 0 and var3.get() == 1:
+            self.temp_var = self.characters + self.list_nums
+        if var1.get() == 1 and var2.get() == 1 and var3.get() == 0:
+            self.temp_var = self.characters + self.capitals + self.specials
+        if var1.get() == 1 and var2.get() == 0 and var3.get() == 1:
+            self.temp_var = self.characters + self.capitals + self.list_nums
+        if var1.get() == 0 and var2.get() == 1 and var3.get() == 1:
+            self.temp_var = self.characters + self.specials + self.list_nums
+        if var1.get() == 1 and var2.get() == 1 and var3.get() == 1:
+            self.temp_var = self.characters + self.capitals + self.specials + self.list_nums
+        if var1.get() == 0 and var2.get() == 0 and var3.get() == 0:
+            return self.temp_var
+        return self.temp_var
