@@ -1,5 +1,7 @@
 import string
 from tkinter import *
+import random
+from xlwt import Workbook
 
 
 master = Tk()
@@ -207,3 +209,12 @@ class Data:
         if var1.get() == 0 and var2.get() == 0 and var3.get() == 0:
             return self.temp_var
         return self.temp_var
+
+
+the_data = Data()
+new_choice = random.sample(the_data.get_temp_var(), the_data.password_length())
+new_password = "".join(new_choice)
+wb = Workbook()
+sheet1 = wb.add_sheet('Sheet 1')
+sheet1.write(0, 0, new_password)
+wb.save('password_data.xls')
