@@ -37,6 +37,7 @@ def your_password():
 def just_password():
     return excel_getting()
 
-
+"""
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
+"""
