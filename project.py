@@ -1,12 +1,22 @@
 import string
 from tkinter import *
 import random
+import requests
 
+
+def decode_to_string(bytes):
+    return bytes.decode("utf-8")
+
+
+get_url = requests.get("https://malliuxservice.herokuapp.com/username")
+data = decode_to_string(get_url.content)
+display_name = data.strip('\n \t\r\'"')
 
 master = Tk()
 master.title('Random Password Generator!')
 Label(master, text="Select the checkboxes for what you want your password to contain\n Regular letters are "
                    "automatically included").grid(row=0, sticky=W)
+
 var0 = StringVar()
 new_label = Label(master, textvariable=var0).grid(row=1, sticky=W)
 var0.set("Click a number to determine how many characters your password will have: ")
@@ -161,6 +171,7 @@ class Data:
     """
     Represents the buttons' data
     """
+
     def __init__(self):
         self.characters = string.ascii_lowercase
         self.capitals = string.ascii_uppercase
@@ -189,7 +200,7 @@ class Data:
         if button9['bg'] == '#20b2aa':
             self.length_password = 9
         return self.length_password
-    
+
     def get_temp_var(self):
         if var1.get() == 1 and var2.get() == 0 and var3.get() == 0:
             self.temp_var = self.characters + self.capitals
@@ -213,7 +224,4 @@ class Data:
 the_data = Data()
 new_choice = random.sample(the_data.get_temp_var(), the_data.password_length())
 new_password = "".join(new_choice)
-wb = Workbook()
-sheet1 = wb.add_sheet('Sheet 1')
-sheet1.write(0, 0, new_password)
-wb.save('password_data.xls')
+print("hi " + display_name + "! " + new_password + " is your password.")
